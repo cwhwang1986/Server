@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var client = require('./twillio.js')
-
+var port = process.env.PORT || 3000;
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -34,4 +34,4 @@ app.post('/message', [
     res.send('Message send to: ' + resData.to + "\nfrom: " + resData.from);
 }]);
 
-app.listen(3000);
+app.listen(port);
