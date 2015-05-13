@@ -19,6 +19,6 @@
     "express-session": "^1.7.2",
     "forever": "^0.10.11",
     "nodemon": "^1.2.1",
-    "request": "^2.34.0",
+    "request": "^2.34.0"
   }
 }
